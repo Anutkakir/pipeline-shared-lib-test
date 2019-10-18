@@ -1,4 +1,4 @@
-def call(body) {
+def call(url, data, auth, mode, headers=[[name: '', value: '']]) {
     response = httpRequest authentication: auth,
             acceptType: 'APPLICATION_JSON_UTF8',
             contentType: 'APPLICATION_JSON_UTF8',
