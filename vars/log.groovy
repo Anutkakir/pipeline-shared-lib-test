@@ -5,7 +5,7 @@ def private printMessage(color, type, message) {
 }
 
 def warning(message) {
-    printMessage("1;43m", "Warning", message)
+    printMessage("1;47m", "Warning", message)
 }
 
 def error(message, exit = true) {
