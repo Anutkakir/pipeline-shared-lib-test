@@ -1,4 +1,4 @@
-def commonHttpRequest(url, data, auth, mode, headers=[[name: '', value: '']]){
+def private commonHttpRequest(url, data, auth, mode, headers=[[name: '', value: '']]){
     response = httpRequest authentication: auth,
             acceptType: 'APPLICATION_JSON_UTF8',
             contentType: 'APPLICATION_JSON_UTF8',
