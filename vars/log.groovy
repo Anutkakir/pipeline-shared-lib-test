@@ -9,7 +9,7 @@
 
 def warning(message) {
     ansiColor('xterm') {
-        println "\\033[90m * * * * [WARNING] - ${message} \033[0m "
+        println "\033[90m * * * * [WARNING] - ${message} \033[0m "
     }
 }
 
