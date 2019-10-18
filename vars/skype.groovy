@@ -19,7 +19,8 @@ def sendMessage(message, channel, skypeSecret, skypeURL){
     def skypeData = '{"channel":"' + channel + '","secret":"' + skypeSecret + '","type":"simple","text":"' + message + '"}'
     log.debug("skypeData - ${skypeData}")
     def skypeResponse = commonHttpRequest(skypeURL, skypeData, '', 'POST', headers=[[name: '', value: '']])
-    log.debug("skypeResponse - ${skypeResponse}")
+    log.debug("done")
+    //log.debug("skypeResponse - ${skypeResponse}")
 }
 
 //sendMessage("test", "ann_test", "env.SKYPE_SECRET", "env.SKYPE_MSG_URL")
