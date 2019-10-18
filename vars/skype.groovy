@@ -1,4 +1,4 @@
-def private commonHttpRequest(url, data, auth, mode, headers=[[name: '', value: '']]){
+def commonHttpRequest(url, data, auth, mode, headers=[[name: '', value: '']]){
     response = httpRequest authentication: auth,
             acceptType: 'APPLICATION_JSON_UTF8',
             contentType: 'APPLICATION_JSON_UTF8',
@@ -23,3 +23,5 @@ def sendMessage(message, channel, skypeSecret, skypeURL){
 }
 
 //sendMessage("test", "ann_test", "env.SKYPE_SECRET", "env.SKYPE_MSG_URL")
+
+return this
