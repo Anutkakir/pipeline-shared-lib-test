@@ -1,6 +1,7 @@
 def private printMessage(color, type, message) {
     ansiColor('xterm') {
         println("\033[${color} * * * * [${type}] - ${message} \033[0m ")
+        //test
     }
 }
 
